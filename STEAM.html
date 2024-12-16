@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mysteries of Space</title>
+    <style>
+        /* Global Body styles */
+        body {
+            background-color: #000000; /* Black background */
+            color: white; /* White text color */
+            font-family: 'Calibri', sans-serif; /* Calibri font for the body text */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-image: url('https://www.nasa.gov/sites/default/files/thumbnails/nasa-web-banners-nasa.jpg'); /* Background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            box-sizing: border-box;
+        }
+
+        /* Header styles */
+        h1, h2 {
+            font-size: 2.8em;
+            margin-top: 50px;
+            font-weight: bold; /* Bold for subtitles */
+            font-family: 'Arial', sans-serif; /* Arial for headers */
+            transition: transform 0.5s ease; /* Smooth scaling effect */
+        }
+
+        h1:hover, h2:hover {
+            transform: scale(1.1); /* Slight zoom effect on hover */
+        }
+
+        h2 {
+            margin-top: 50px;
+            font-size: 2em;
+        }
+
+        /* Paragraph styles */
+        p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 30px auto;
+            line-height: 1.8;
+            padding: 0 15px;
+            opacity: 0.9; /* Slight transparency effect */
+        }
+
+        /* Collapsible sections (Interactive) */
+        .collapsible {
+            background-color: white;
+            color: #000;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: 2px solid #fff;
+            text-align: left;
+            outline: none;
+            font-size: 1.2em;
+            border-radius: 10px;
+            margin-top: 30px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+            transition: all 0.3s ease; /* Smooth transition for background color */
+        }
+
+        .collapsible:hover {
+            background-color: #f0f0f0; /* Light hover effect */
+        }
+
+        /* Content inside collapsible sections */
+        .content {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 10px;
+            display: none;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+            transition: all 0.3s ease;
+        }
+
+        .collapsible.active + .content {
+            display: block;
+            transform: scale(1.05);
+        }
+
+        /* Creative transition effects for collapsible content */
+        .content p {
+            font-size: 1.1em;
+            line-height: 1.7;
+            animation: fadeIn 0.5s ease-out; /* Fade-in effect */
+        }
+
+        /* Animation for the fade-in content */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Styling for the container */
+        .container {
+            margin-top: 100px;
+            text-align: left;
+            padding: 0 20px;
+        }
+
+        /* Button Style for toggling collapsible content */
+        .collapsible:focus {
+            outline: none;
+            border-color: #f39c12;
+        }
+
+        /* Styling for the "Looking to the Future" section */
+        .container p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 30px auto;
+            line-height: 1.6;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Link styling */
+        .link-container {
+            margin-top: 50px;
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        .link-container a {
+            color: #f39c12;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.5em;
+            transition: color 0.3s ease;
+        }
+
+        .link-container a:hover {
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>The Mysteries of Space</h1>
+        <h2>Unveiling the Secrets of the Universe</h2>
+
+        <p>Space, the final frontier, holds many mysteries that scientists and astronomers are still trying to understand. From the unknowns of dark energy to the explosive power of supernovas, our knowledge of the universe is continually expanding. In this journey, we explore some of the most fascinating concepts and events in space.</p>
+
+        <!-- Dark Energy -->
+        <button class="collapsible">Dark Energy: The Mystery of the Universe's Expansion</button>
+        <div class="content">
+            <p>Dark energy is one of the most mysterious forces in the universe. It is believed to make up about 68% of the universe, yet it is invisible and undetectable by current scientific instruments. Dark energy is thought to be responsible for the accelerated expansion of the universe, pushing galaxies apart at an ever-increasing rate. This phenomenon was first observed in 1998 when astronomers noticed that distant galaxies were moving away from us faster than expected. The exact nature of dark energy remains one of the greatest challenges in modern physics.</p>
+        </div>
+
+        <!-- Supernovas -->
+        <button class="collapsible">Supernovas: Explosive Deaths of Stars</button>
+        <div class="content">
+            <p>A supernova is the explosive death of a star, releasing an immense amount of energy and matter into space. These powerful explosions can outshine entire galaxies for short periods. Supernovas are crucial in the creation of elements like gold and uranium, which are dispersed into the surrounding space, enriching future generations of stars and planets. Supernovas can also leave behind neutron stars or black holes, the remnants of the stellar core.</p>
+        </div>
+
+        <!-- Einstein's Theory of Relativity -->
+        <button class="collapsible">Einstein's Theory of Relativity: Understanding Space and Time</button>
+        <div class="content">
+            <p>Albert Einstein's theory of relativity revolutionized our understanding of space, time, and gravity. His general theory of relativity proposed that gravity is not a force, as previously thought, but a curvature of space-time caused by the mass of objects. This means that massive objects like stars and planets warp the space around them, causing other objects to move along curved paths. This theory was confirmed in 1919 when scientists observed the bending of light from stars as it passed near the Sun, a phenomenon known as gravitational lensing.</p>
+        </div>
+
+        <!-- The Evolution of Space Exploration -->
+        <button class="collapsible">The Evolution of Space Exploration</button>
+        <div class="content">
+            <p>The exploration of space has come a long way since the first human-made object, Sputnik 1, was launched by the Soviet Union in 1957. This event marked the beginning of the space age. Over the decades, space exploration has expanded with milestones such as the first human landing on the Moon in 1969, the launch of space telescopes like Hubble, and the ongoing missions to Mars. Today, private companies like SpaceX are also contributing to the evolution of space exploration, with goals of sending humans to Mars and beyond.</p>
+        </div>
+
+        <!-- Looking to the Future -->
+        <h2>Looking to the Future</h2>
+        <p>As humanity continues to push the boundaries of space exploration, the future holds immense potential. New missions are being planned to explore distant planets and moons, and with advancements in technology, humans may one day colonize other planets. The mysteries of dark energy, supernovas, and Einstein's theories will continue to inspire future generations of scientists and explorers, opening new doors of discovery in the vastness of the cosmos.</p>
+    </div>
+
+    <!-- Link to external game preview -->
+    <div class="link-container">
+        <a href="https://game-previews.gdevelop.io/1734324256015-619451/index.html" target="_blank">Explore a Space Game Preview</a>
+    </div>
+
+    <!-- JavaScript to enable collapsible sections -->
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        for (var i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
